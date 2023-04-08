@@ -16,5 +16,5 @@ const makeLiEl = name => {
   return liEl
 }
 
-const allLiEl = ingredients.map(makeLiEl);
+const allLiEl = ingredients.map(makeLiEl)
 ingredientsEl.append(...allLiEl)
