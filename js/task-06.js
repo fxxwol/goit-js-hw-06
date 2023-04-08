@@ -1,8 +1,6 @@
-const refs = {
-    input: document.querySelector('#validation-input')
-}
 
-refs.input.addEventListener('blur', onInputBlur)
+const input = document.querySelector('#validation-input')
+input.addEventListener('blur', onInputBlur)
 
 function onInputBlur(event) {
     event.currentTarget.value.length <= 6 ?
