@@ -5,10 +5,7 @@ const refs = {
 
 refs.input.addEventListener('input', onInput)
 function onInput(event) { 
-    if (event.currentTarget.value != "") {
-        refs.span.textContent = event.currentTarget.value
-    }
-    else { 
+    event.currentTarget.value != "" ?
+        refs.span.textContent = event.currentTarget.value :
         refs.span.textContent = "Anonymus"
-    }
 }
