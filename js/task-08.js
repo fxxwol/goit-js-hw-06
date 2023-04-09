@@ -5,7 +5,6 @@ form.addEventListener('submit', onSubmitForm)
 function onSubmitForm(event) {
     event.preventDefault();
     const currentForm = event.currentTarget;
-    console.log(currentForm.elements)
     const formData = new FormData(currentForm)
     const user = {}
 
